@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header {
+            background-image: url('img/oo.gif');
+            color: black;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        .navbar {
+            border: 2px solid #007BFF;
+            font-family: Grabiola;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 25px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+        }
+
+        .navbar > li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        .navbar > li > a {
+            display: block;
+            padding: 14px 20px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .navbar > li > a:hover,
+        .dropdown a:hover {
+            background-color: #005bb5;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0073e6;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown li {
+            width: 100%;
+        }
+
+        .dropdown li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar li:hover .dropdown {
+            display: block;
+        }
+
+           main {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+    background: linear-gradient(90deg, #ffffff,#0073e6,#ffffff);
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .formulario-contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: black;
+    }
+
+    label {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 90%;
+        padding: 12px;
+        border: 2px solid #003366;
+        border-radius: 10px;
+        font-size: 1em;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333;
+        transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #ff8a80;
+        background-color: #ffffff;
+        outline: none;
+        box-shadow: 0 0 10px rgba(255, 122, 150, 0.5);
+    }
+
+    button {
+        padding: 12px;
+        background-color: #3399ff;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #003366;
+        transform: translateY(-3px);
+    }
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.social-buttons a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+    animation: float 4s ease-in-out infinite;
+    overflow: hidden; /* Asegura que la imagen no se salga de la burbuja */
+}
+
+.social-buttons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra la burbuja */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+}
+
+.social-buttons a:hover {
+    transform: scale(1.2);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+        footer {
+            background-image: url('img/oo.gif');
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte. Completa el formulario a continuación y descarga tus datos.</p>
+    </header>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="Pagina de inicio.html">Inicio</a></li>
+            <li><a href="#">Ver Mas</a>
+                <ul class="dropdown">
+                    <li><a href="Noticias.html">Noticias</a></li>
+                    <li><a href="AcercaDe.html">Acerca De</a></li>
+                    <li><a href="Productos.html">Productos Ofrecidos</a></li>
+                </ul>
+            </li>
+            <li><a href="Generaciones.html">Generaciones De Las Computadoras</a></li>
+            <li><a href="Contactanos.html">Contacto</a></li>
+        </ul>
+    </nav>
+<br>
+    <main>
+        <form id="formulario-contacto" class="formulario-contacto">
+             <label for="nombre">Nombre:</label>
+   <input type="text" id="nombre" name="nombre" required title="Por favor, ingrese su nombre.">
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="button" onclick="descargarDatos()" required>Descargar</button>
+        </form>
+    </main>
+<br>
+   <div class="social-buttons">
+    <a href="https://www.facebook.com" class="facebook" target="_blank">
+        <!-- Imagen para Facebook -->
+        <img src="img/df.png" alt="Facebook" />
+    </a>
+    <a href="https://www.twitter.com" class="twitter" target="_blank">
+        <!-- Imagen para Twitter -->
+        <img src="img/sw.png" alt="Twitter" />
+    </a>
+    <a href="https://www.instagram.com" class="instagram" target="_blank">
+        <!-- Imagen para Instagram -->
+        <img src="img/b.png" alt="Instagram" />
+    </a>
+    <a href="https://www.linkedin.com" class="linkedin" target="_blank">
+        <!-- Imagen para LinkedIn -->
+        <img src="img/fb.jpg" alt="LinkedIn" />
+    </a>
+</div>
+
+
+    <footer>
+        <p>&copy; 2024 Empresa de Computadoras. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function descargarDatos() {
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const contenido = `Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`;
+
+            const blob = new Blob([contenido], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'contacto.txt';
+            a.click();
+
+            URL.revokeObjectURL(url);
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

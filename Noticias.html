@@ -1,0 +1,275 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Empresa De Computadoras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <style type="text/css">
+        body {
+           
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+             font-family: Gabriola;
+            background-image:url('img/de.gif');
+            color: #fff;
+            padding: 20px 0;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            top: 9px;
+            left: 0px;
+            height: 56px;
+        }
+        .header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .news-card {
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-card img {
+            width: 100%;
+            height: auto;
+        }
+        .news-card .content {
+            padding: 20px;
+        }
+        .news-card h2 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+        .news-card p {
+            margin: 10px 0;
+        }
+        .footer {
+             font-family: Gabriola;
+          background-image:url(img/de.gif);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+        }
+        @media screen and (max-width: 768px) {
+            .header .container, .main-content {
+                padding: 0 10px;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav a {
+                margin-bottom: 10px;
+            }
+        }
+        .auto-style1 {
+            font-size: xx-large;
+            font-weight: normal;
+        }
+        .nuevoEstilo1 {
+            text-decoration: underline overline;
+            font-size: 35px;
+            font-family: Grabiola;
+        }
+        .nuevoEstilo2 {
+            font-family: Grabiola;
+            font-size: 25px;
+        }
+           .navbar {
+            font-family:Gabriola;
+    border: 2px solid #007BFF;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size:25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar > li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar > li > a {
+    display: block;
+    padding: 14px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar > li > a:hover,
+.dropdown a:hover {
+    background-color: #005bb5;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0073e6;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+        .nuevoEstilo3 {
+            border: thick double #005BB5;
+        }
+               .floating-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-bubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.floating-bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+    
+    </style>
+         <div class="floating-bubble">
+        <img src="img/h.jpg" alt="Imagen en la burbuja">
+    </div>
+        <header class="header">
+        <div class="container">
+            <h1 class="auto-style1"><span class="nuevoEstilo1"><strong>SuperComputadoras Morazan</strong></span></h1>
+           
+        </div>
+    </header><br>
+
+        <nav>
+            <ul class="navbar">
+                <li class="auto-style1"><a href="Pagina de inicio.html" class="auto-style1">Inicio</a></li>
+               
+                 
+                <li><a href="#" class="auto-style1">Ver Mas</a>
+                    <ul class="dropdown">
+                        <li><a href="Noticias.html">Noticias</a></li>
+                      <li><a href="AcercaDe.html">Acerca De</a></li>
+ <li><a href="Productos.html">Productos Ofrecidos</a></li>
+
+                    </li>
+                    </ul>
+                </li>
+                <li class="auto-style1"><a href="Generaciones.html">Generaciones De Las Computadoras</a></li>
+               <li><a href="Contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    <main class="main-content">
+        <div class="news-card">
+            <img src="img/dr.jpeg" alt="Noticia 1">
+            <div class="content">
+                <h2>¿A cuánto se vendería hoy la primera Mac de Apple lanzada hace 40 años?</h2>
+                <p>La Mac cumple hoy 40 años. La sucesora de la Apple II rompió con el paradigma de entonces y ofreció una computadora diferente con gráficos, iconos y un mouse para controlar la interacción</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="img/k.jpg" alt="Noticia 2">
+            <div class="content">
+                <h2>MANIAC, la primera computadora que venció a un humano en ajedrez e inició la “era de la máquina”</h2>
+                <p>MANIAC no fue ni la primera computadora ni la más potente, no obstante, ganó un lugar especial en la historia de la informática gracias a una gran contribución: su diseño.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="img/gh.png" alt="Noticia 3">
+            <div class="content">
+                <h2>¿Sueles dejar tu PC en suspensión por mucho tiempo? La estás poniendo en grave peligro</h2>
+                <p>Además de acumularse los procesos en el sistema, también podría exponer la computadora a ciertos ciberataques.¿Por qué no deberías dejar tu PC en modo suspensión de forma constante y por mucho tiempo?</p>
+            </div>
+        </div>
+          <div class="news-card">
+            <img src="img/ds.png" alt="Noticia 3">
+            <div class="content">
+                <h2>¿Tienes problemas con tu laptop? Estas son cinco señales de que necesitas un cambio</h2>
+                <p>Nuestra vida es más digital cada año. Tras la pandemia, el trabajo a distancia y los estudios online han hecho que una computadora o una laptop sean imprescindibles. Sin embargo, como toda herramienta llega un momento en el que debemos actualizar.
+
+Y es que también los archivos son más pesados, se necesita mayor tecnología que pueda procesar la gran cantidad de datos que hay en todo el mundo virtual.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p><span class="nuevoEstilo2"><strong>&copy; 2024 SuperComputadoras Morazan. Todos los derechos reservados.</strong></span></p>
+    </footer>
+     </body>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

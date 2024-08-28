@@ -1,0 +1,266 @@
+  <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Empresa De Computadoras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <style type="text/css">
+             .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #007BFF;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #fff;
+            border: 4px solid #007BFF;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-item.left {
+            left: 0;
+        }
+        .timeline-item.right {
+            left: 50%;
+        }
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-content h2 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+        .timeline-content p {
+            margin: 10px 0;
+        }
+        .timeline-content img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        @media screen and (max-width: 768px) {
+            .timeline-item.left, .timeline-item.right {
+                left: 0;
+                width: 100%;
+                text-align: left;
+            }
+            .timeline-item::after {
+                left: 50%;
+                margin-left: -12px;
+            }
+        }
+         .hero {
+            background: url(img/de.gif) no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            font-family:Gabriola;
+            
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+        .hero p {
+            font-size: x-large;
+            margin: 0;
+        }
+        .nuevoEstilo1 {
+            font-family: Grabiola;
+            text-decoration: underline overline;
+            font-size: 45px;
+        }
+        .auto-style1 {
+            font-size: 25px;
+        }
+        .nuevoEstilo2 {
+            border: thick double #007BFF;
+        }
+        .navbar {
+            font-family:Gabriola;
+    border: 2px solid #007BFF;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size:25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar > li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar > li > a {
+    display: block;
+    padding: 14px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar > li > a:hover,
+.dropdown a:hover {
+    background-color: #005bb5;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0073e6;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+           .floating-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-bubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.floating-bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+   
+    </style>
+   <div class="floating-bubble">
+        <img src="img/h.jpg" alt="Imagen en la burbuja">
+    </div>
+       
+    
+          <nav>
+            <ul class="navbar">
+                <li class="auto-style1"><a href="Pagina de inicio.html." class="auto-style1">Inicio</a></li>
+              
+                <li><a href="#" class="auto-style1">Ver Mas</a>
+                    <ul class="dropdown">
+                        <li><a href="Noticias.html">Noticias</a></li>
+                        <li><a href="AcercaDe.html">Acerca De</a></li>
+ <li><a href="Productos.html">Productos Ofrecidos</a></li>
+
+                      
+                    </ul>
+                </li>
+                <li class="auto-style1"><a href="Generaciones.html">Generaciones De Las Computadoras</a></li>
+              <li><a href="Contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+        <h2 class="nuevoEstilo1">Generaciones De Las Computadoras</h2>
+        <p class="auto-style1">Te mostramos un poco sobre como van evolucionando las computadoras.</p>
+    </section>
+         <div class="timeline">
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h2>1era (1940-1956)</h2>
+                <p>Gran tamaño y demanda energética. Usaban tarjetas perforadas.</p>
+                <img src="img/v.jpg" alt="Imagen 1">
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h2>2da (1956-1963)</h2>
+                <p>Menor tamaño y demanda energética. Usaban tarjetas perforadas.</p>
+                <img src="img/a.jpg" alt="Imagen 2">
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h2>3era (1963-1971)</h2>
+                <p>Menor consumo energético y abaratamiento de costos. Programación múltiple y teleproceso.</p>
+                <img src="img/d.jpg" alt="Imagen 3">
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h2>4ta (1971-1982)</h2>
+                <p>Primeras computadoras personales (PC). Primeras supercomputadoras.</p>
+                <img src="img/y.jpg" alt="Imagen 4">
+            </div>
+        </div>
+          <div class="timeline-item left">
+            <div class="timeline-content">
+                <h2>5ta (1982-hoy)</h2>
+                <p>Primeras redes informáticas e Internet. Algoritmos y funciones automáticas complejas.</p>
+                <img src="img/g.jpg" alt="Imagen 3">
+            </div>
+        </div>
+         
+     
+    </div>
+         <section class="hero">
+        <h2 class="nuevoEstilo1">Estas Son Las Generaciones De Las Computadoras Espero Te Sean Util.</h2>
+        <p class="auto-style1">Gracias Por Visitar Nuestra Pagina.</p>
+    </section>
+    
+     </body>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

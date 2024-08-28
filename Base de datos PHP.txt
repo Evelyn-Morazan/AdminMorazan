@@ -1,0 +1,29 @@
+-- Crear la base de datos
+CREATE DATABASE TiendaComputadoras;
+GO
+
+-- Usar la base de datos recién creada
+USE TiendaComputadoras;
+GO
+
+-- Crear la tabla Productos
+CREATE TABLE Productos (
+    ProductoID INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Descripcion NVARCHAR(255),
+    Precio DECIMAL(10, 2) NOT NULL,
+    Stock INT NOT NULL,
+    Categoria NVARCHAR(50)
+);
+GO
+
+-- Crear la tabla Compras
+CREATE TABLE Compras (
+    CompraID INT IDENTITY(1,1) PRIMARY KEY,
+    ProductoID INT NOT NULL,
+    Cantidad INT NOT NULL,
+    FechaCompra DATETIME NOT NULL DEFAULT GETDATE(),
+    Cliente NVARCHAR(100) NOT NULL,
+    FOREIGN KEY (ProductoID) REFERENCES Productos(ProductoID)
+);
+GO
